@@ -1,0 +1,206 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Your styles here ... */
+
+/*FONTS*/
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("OpenSans-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("OpenSans-Regular.ttf");
+}
+
+/*Container modification*/
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*Navbar*/
+.navbar-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-default> :first-child {
+    margin-left: 200px;
+}
+
+.navbar-default li {
+    margin-right: 32px;
+}
+
+.nav.navbar-nav li a {
+    font-size: 14px;
+    font-family: "OpenSans-Semibold";
+    color: rgb(2, 2, 2);
+    line-height: 1.286;
+}
+
+.active a {
+    color: #4a90e2 !important;
+    background-color: transparent !important;
+}
+
+/*Navbar search*/
+.search {
+    border-radius: 25px;
+}
+
+.searchForm {
+    margin-left: 100px;
+}
+
+.has-feedback-left .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+.has-feedback-left .form-control.input-sm,
+.has-feedback-left.form-group-sm .form-control {
+    padding-left: 30px;
+}
+
+.has-feedback-left .form-control.input-lg,
+.has-feedback-left.form-group-lg .form-control {
+    padding-left: 46px;
+}
+
+.has-feedback-left .form-control-feedback {
+    left: 0;
+}
+
+/*Banner*/
+.banner {
+    height: 300px;
+    width: 100%;
+    background: url("../assets/community-members-background.jpg") no-repeat center center fixed;
+    text-align: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    display: table;
+}
+
+.banner h1 {
+    letter-spacing: 2px;
+}
+
+.bannerContentWrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner h1,
+.banner p {
+    font-size: 57px;
+    font-family: "OpenSans-Light";
+    color: rgb(255, 255, 255);
+    line-height: 0.888;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 36px;
+    font-family: "OpenSans-Regular";
+}
+
+/*Members*/
+.membersWrapper {
+    text-align: center;
+}
+
+.membersWrapper h2 {
+    font-family: "OpenSans-Regular";
+    font-size: 41px;
+    color: rgb(2, 2, 2);
+    line-height: 0.439;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.membersWrapper span {
+    display: inline-block;
+    height: 180px;
+    width: 190px;
+    margin: auto;
+    margin-left: 17px;
+    margin-right: 17px;
+    text-align: center;
+    font-family: "OpenSans-Regular";
+    color: black;
+}
+
+.membersWrapper img {
+    border-radius: 75%;
+}
+
+.membersWrapper p {
+    color: #8c8c8c;
+}
+
+span h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.additionalPeople {
+    margin-top: 20px;
+}
+
+
+/*LOADMORE*/
+.loadMoreWrapper {
+    margin-top: 60px;
+}
+
+.loadMore {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+}
+
+/*FOOTER*/
+.footer {
+    height: 150px;
+    background-color: #171717;
+}
+
+.leftFooter {
+    text-align: center;
+    font-size: 11px;
+    color: rgb(204, 204, 204);
+    line-height: 1.636;
+    font-family: "OpenSans-Light";
+    margin-top: 20px;
+}
+
+.rightFooter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES FOR MOBILE*/
+@media only screen and (max-device-width: 500px)  {
+    .membersWrapper span {
+        display: block !important;
+        margin-top: 50px !important;
+        margin: auto;
+    }
+}
